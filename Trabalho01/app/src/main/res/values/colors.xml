@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e5433</color>
+    <color name="colorPrimaryDark">#010101</color>
+    <color name="colorAccent">#010101</color>
+    <color name="fundo">#82d88d</color>
+    <color name="botaoP">#349a46</color>
+    <color name="notaBaixa">#c00625</color>
+    <color name="notaAlta">#3ca71b</color>
+</resources>

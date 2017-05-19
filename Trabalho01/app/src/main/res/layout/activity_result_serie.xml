@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result_serie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/fundo"
+    tools:context="com.example.alexm.trabalho01.ResultSerie">
+
+    <TextView
+        android:text="Série:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txSerie"
+        android:textSize="25sp"
+        android:textColor="#010101"
+        android:layout_marginTop="10dp"/>
+
+    <RadioButton
+        android:text="1º Série"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbPrimeiraSerie"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <RadioButton
+        android:text="2º Série"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbSegundaSerie"
+        android:textSize="20dp"/>
+
+    <RadioButton
+        android:text="3º Série"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbTerceiraSerie"
+        android:textSize="20dp"/>
+
+    <Button
+        android:text="Continuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/botaoP"
+        android:id="@+id/btContinuar"
+        android:layout_margin="15dp" />
+
+</LinearLayout>

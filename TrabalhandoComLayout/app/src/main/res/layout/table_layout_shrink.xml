@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="2">
+
+    <TableRow>
+        <TextView android:text="Coluna 1"/>
+        <TextView android:text="Coluna 2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Coluna 1"/>
+        <TextView android:text="Coluna 2"/>
+        <TextView android:text="Texto grande que vai sair da tela mas vai quebrar linha"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Coluna 1"/>
+        <TextView android:text="Coluna 2"/>
+        <TextView android:text="Coluna 3"/>
+    </TableRow>
+
+</TableLayout>

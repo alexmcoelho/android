@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82d88d"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edNome"
+            android:background="#ffffff"
+            android:textSize="30dp"
+            android:hint="Nome do Aluno"
+            android:text=""
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edMatricula"
+            android:background="#ffffff"
+            android:textSize="30dp"
+            android:hint="Matrícula"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="Sexo:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txSexo"
+            android:textSize="25sp"
+            android:textColor="#010101"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:text="Masculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/rbMasculino" />
+
+        <RadioButton
+            android:text="Feminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbFeminino"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edIdade"
+            android:background="#ffffff"
+            android:textSize="30dp"
+            android:hint="Idade"
+            android:layout_marginTop="5dp"
+            android:text=""/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edEndereco"
+            android:background="#ffffff"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Endereço" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Serie:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txEscolaSerie"
+                    android:textSize="25sp"
+                    android:textColor="#010101"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:text="Escolher Série"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btEscolherSerie"
+                    android:textColor="#349A46"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txS"
+                    android:textSize="20sp"
+                    android:textColor="#010101"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:text="Confirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btConfirmarCadAluno"
+                    android:textSize="25dp"
+                    android:background="@color/botaoP"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -26,6 +26,11 @@ public class Tela1 extends AppCompatActivity {
                 EditText etName = (EditText)findViewById(R.id.editText);
                 String nome = etName.getText().toString();
                 bundle.putString("Nome", nome);
+
+                EditText etTeste = (EditText)findViewById(R.id.edTeste);
+                String teste = etTeste.getText().toString();
+                bundle.putString("Teste", teste);
+
                 Intent it = new Intent(getApplicationContext(),
                         Tela2.class);
                 it.putExtras(bundle);

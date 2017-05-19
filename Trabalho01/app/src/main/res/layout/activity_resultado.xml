@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alexm.trabalho01.Resultado"
+    android:layout_margin="10dp">
+
+    <TableRow>
+    <TextView
+        android:text="Resultados:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Resultados"
+        android:layout_gravity="center_vertical"
+        android:textSize="25sp"
+        android:textColor="#010101"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNomeResultado"
+            android:textSize="20sp"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txSerieResultado"
+            android:textSize="15sp"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/tri01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tri01"
+            android:textSize="15sp"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVie"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textV"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Média"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:id="@+id/textView"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota01Tri01"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso01Tri01"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:id="@+id/txMediaTri01"
+            android:textSize="15dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota02Tri01"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso02Tri01"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota03Tri01"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso03Tri01"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <!--Segundo tri -->
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/tri02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tri02"
+            android:textSize="15sp"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVie2"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textV2"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Média"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota01Tri02"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso01Tri02"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:id="@+id/txMediaTri02"
+            android:textSize="15dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota02Tri02"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso02Tri02"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota03Tri02"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso03Tri02"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <!-- Terceiro tri -->
+
+    <TableRow>
+
+        <TextView
+            android:text="@string/tri03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tri03"
+            android:textSize="15sp"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVi3"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text="Média"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota01Tri03"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso01Tri03"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:id="@+id/txMediaTri03"
+            android:textSize="15dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota02Tri03"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso02Tri03"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNota03Tri03"
+            android:textColor="#010101"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txPeso03Tri03"
+            android:textColor="#010101"/>
+    </TableRow>
+
+    <TableRow android:textAlignment="textEnd">
+        <TextView
+            android:text="Média: 9.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txMediaGeral"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#010101"
+            android:layout_marginTop="5dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="APROVADO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txSituacao"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#010101"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:text="Início"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btVoltarInicio"
+            android:background="@color/botaoP"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp" />
+
+    </TableRow>
+
+
+</TableLayout>

@@ -13,7 +13,7 @@ public class Tela2 extends AppCompatActivity {
         setContentView(R.layout.activity_tela2);
         Intent it = getIntent();
         Bundle backBundle = it.getExtras();//o certo seria verificar se esta null
-        String nome = backBundle.getString("Nome").toString();
+        String nome = backBundle.getString("Nome").toString() + backBundle.getString("Teste").toString();
         TextView tvNome = (TextView)findViewById(R.id.msg);
         tvNome.setText(nome);
     }

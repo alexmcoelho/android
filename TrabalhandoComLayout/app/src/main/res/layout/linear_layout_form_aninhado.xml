@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--o nome era pra ser alinhado-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#71adbc"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/labelSenha"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campoUsuario"
+            android:gravity="left"
+            android:text="Senha"/>
+        <!--ao lado do label Senha "layout_toRight"-->
+        <EditText
+            android:id="@+id/campoSenha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/labelSenha"
+            android:layout_toRightOf="@+id/labelSenha"
+            android:background="@android:drawable/editbox_background"
+            android:password="true"/>
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/campoSenha"
+            android:layout_marginTop="10dip"
+            android:text="Login"/>
+    </RelativeLayout>
+
+</LinearLayout>
