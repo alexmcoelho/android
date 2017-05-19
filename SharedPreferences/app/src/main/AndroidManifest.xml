@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ExemploSalvarArquivo" />
-        <activity android:name=".ExemploSalvarArquivoSDCard"></activity>
+        <activity android:name=".ExemploSalvarArquivoSDCard" />
+        <activity android:name=".ExemploPreferences"></activity>
     </application>
 
 </manifest>

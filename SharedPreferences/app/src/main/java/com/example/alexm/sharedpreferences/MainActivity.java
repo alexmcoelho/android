@@ -34,7 +34,7 @@ public class MainActivity extends ListActivity {
             case 1:
                 startActivity(new Intent(this, ExemploSalvarArquivoSDCard.class));
             case 2:
-                //startActivity(new Intent(this, TelaSplashScreenRunnable.class));
+                startActivity(new Intent(this, ExemploPreferences.class));
             case 3:
                 finish();
         }
