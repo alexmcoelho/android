@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\alexm\\AndroidStudioProjects\\Layout\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\alexm\\AndroidStudioProjects\\Layout\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Optativa04\\Layout\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\Optativa04\\Layout\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
