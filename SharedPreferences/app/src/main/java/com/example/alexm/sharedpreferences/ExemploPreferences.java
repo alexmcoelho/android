@@ -20,8 +20,9 @@ public class ExemploPreferences extends AppCompatActivity implements OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exemplo_preferences);
+        //Recupera a hashtable que armazena os valores nas preferências
         pref = getSharedPreferences(NOME, 0);
-
+        // O segundo argumento é o valor default se não encontrar
         boolean marcado = pref.getBoolean("status", false);
         Log.i(CATEGORIA, "Status atual: " + marcado);
         CheckBox check = (CheckBox) findViewById(R.id.check);
