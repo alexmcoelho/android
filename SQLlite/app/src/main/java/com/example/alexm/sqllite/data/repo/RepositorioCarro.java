@@ -9,6 +9,9 @@ import android.util.Log;
 import com.example.alexm.sqllite.data.DatabaseManager;
 import com.example.alexm.sqllite.data.model.Carro;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by alexm on 26/05/2017.
  */
@@ -119,5 +122,46 @@ public class RepositorioCarro {
             Log.e(CATEGORIA, "Erro ao buscar os registros: " +e.toString());
             return null;
         }
+    }
+
+    public List<Carro> listarCarros(){
+        Cursor c = getCursor();
+        List<Carro> carros = new ArrayList<Carro>();
+        if(c.moveToFirst()){
+            int idxId = c.getColumnIndex(Carro.Carros._ID);
+            int idxNome = c.getColumnIndex(Carro.Carros.NOME);
+            int idxPlaca = c.getColumnIndex(Carro.Carros.PLACA);
+            int idxAno = c.getColumnIndex(Carro.Carros.ANO);
+            do {
+                Carro carro = new Carro();
+                carros.add(carro);
+                carro.setId(c.getLong(idxId));
+                carro.setNome(c.getString(idxNome));
+                carro.setPlaca(c.getString(idxPlaca));
+                carro.setAno(c.getInt(idxAno));
+            }while (c.moveToFirst());
+        }
+        return carros;
+    }
+
+    public Carro buscarCarroPorNome(String nome){
+        Carro carro = null;
+        try {
+            SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+            Cursor c = db.query(Carro.TABLE, Carro.colunas, Carro.Carros.NOME + "='" + nome +
+            "'", null, null, null, null);
+            if(c.moveToNext()){
+                carro = new Carro();
+                carro.setId(c.getLong(0));
+                carro.setNome(c.getString(1));
+                carro.setPlaca(c.getString(2));
+                carro.setAno(c.getInt(3));
+            }
+        }catch (SQLException e){
+            Log.e(CATEGORIA, "Erro ao buscar o carro pelo nome: " + e.toString());
+            DatabaseManager.getInstance().closedDatabase();
+            return null;
+        }
+        return carro;
     }
 }
