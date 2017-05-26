@@ -2,6 +2,7 @@ package com.example.alexm.sqllite.data.repo;
 
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
@@ -106,5 +107,17 @@ public class RepositorioCarro {
         }
         DatabaseManager.getInstance().closedDatabase();
         return null;
+    }
+
+    public Cursor getCursor(){
+        try {
+            SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+            Cursor c = db.query(Carro.TABLE, Carro.colunas,
+            null, null, null, null, null);
+            return c;
+        }catch (SQLException e){
+            Log.e(CATEGORIA, "Erro ao buscar os registros: " +e.toString());
+            return null;
+        }
     }
 }
