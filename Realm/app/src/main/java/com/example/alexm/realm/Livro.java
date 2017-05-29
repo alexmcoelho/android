@@ -1,5 +1,6 @@
 package com.example.alexm.realm;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -16,12 +17,11 @@ public class Livro extends RealmObject {
     int ano;
 
 
-
     public Livro(){
 
     }
 
-    public Livro(int id, String autor, String nome, int ano){
+    public Livro(int id, String autor, String nome, int ano) {
         this.id = id;
         this.autor = autor;
         this.nome = nome;
