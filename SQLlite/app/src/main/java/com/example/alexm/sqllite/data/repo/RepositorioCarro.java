@@ -25,7 +25,7 @@ public class RepositorioCarro {
 
     public  static String createTable(){
         return "CREATE TABLE " + Carro.TABLE +
-                "(_ID integer primary key autoincrement, "+
+                "(_id integer primary key autoincrement, "+
                 "nome text not null, placa text not null, "+
                 "ano text not null)";
     }
@@ -116,7 +116,7 @@ public class RepositorioCarro {
         try {
             SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
             Cursor c = db.query(Carro.TABLE, Carro.colunas,
-            null, null, null, null, null);
+            null, null, null, null, null, null);
             return c;
         }catch (SQLException e){
             Log.e(CATEGORIA, "Erro ao buscar os registros: " +e.toString());
@@ -139,7 +139,7 @@ public class RepositorioCarro {
                 carro.setNome(c.getString(idxNome));
                 carro.setPlaca(c.getString(idxPlaca));
                 carro.setAno(c.getInt(idxAno));
-            }while (c.moveToFirst());
+            }while (c.moveToNext());
         }
         return carros;
     }

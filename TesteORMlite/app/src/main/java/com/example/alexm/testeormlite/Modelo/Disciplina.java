@@ -1,11 +1,7 @@
 package com.example.alexm.testeormlite.Modelo;
-
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-/**
- * Created by alexm on 28/05/2017.
- */
 @DatabaseTable(tableName = "disciplina")
 public class Disciplina {
     @DatabaseField(generatedId = true) //id auto increment
@@ -14,8 +10,7 @@ public class Disciplina {
     private String nome;
     @DatabaseField
     private String codigo;
-    @DatabaseField(foreign = true) //chave estrangeira isso precisa, pois o ORMlite não é muito
-    // inteligente com coleção, e dessa forma a relação entre as tabelas prevalecerá
+    @DatabaseField(foreign = true)
     private Estudante estudante;
 
     public Disciplina() {

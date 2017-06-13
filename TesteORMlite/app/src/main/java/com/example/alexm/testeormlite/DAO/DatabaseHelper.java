@@ -16,8 +16,7 @@ import java.sql.SQLException;
  */
 
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper{
-
-    private static final String databaseName = "school.db";
+    private static final String databaseName = "banco_de_dados_escola.db";
     private static final int databaseVersion = 13;
 
     public DatabaseHelper(Context context) {

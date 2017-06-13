@@ -79,7 +79,7 @@ public class Carro {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/carros");
         public static final String NOME = "nome";
         public static final String ANO = "ano";
-        public static final String PLACA = "´placa";
+        public static final String PLACA = "placa";
         //Mime type para todos os carros
         public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.google.carros";
         //Mime type um única carro

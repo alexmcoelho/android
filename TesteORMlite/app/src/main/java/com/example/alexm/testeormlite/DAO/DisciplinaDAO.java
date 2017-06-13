@@ -10,7 +10,6 @@ import java.sql.SQLException;
  */
 
 public class DisciplinaDAO extends BaseDaoImpl<Disciplina, Integer> {
-
     public DisciplinaDAO(ConnectionSource cs) throws SQLException {
         super(Disciplina.class);
         setConnectionSource(cs);

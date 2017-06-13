@@ -31,10 +31,35 @@
             android:text="Novo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/btNovo"
             android:layout_weight="1"
             android:layout_marginLeft="15dp"
             android:drawableRight="@android:drawable/ic_menu_add"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <ImageView
+            android:id="@+id/swipeUp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:src="@android:drawable/arrow_up_float"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:text="Motoristas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btMotoras"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:layout_marginRight="15dp"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -1,9 +1,8 @@
 package com.example.alexm.sqllite;
 
 import android.content.Intent;
-import android.database.SQLException;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +25,23 @@ public class EditarCarro extends AppCompatActivity {
         campoAno = (EditText) findViewById(R.id.idAnos);
         id = null;
         Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            id = extras.getLong(Carro.Carros._ID);
+            if(id != null){
+                Carro c = buscarCarro(id);
+                campoNome.setText(c.getNome());
+                campoPlaca.setText(c.getPlaca());
+                campoAno.setText(String.valueOf(c.getAno()));
+            }
+        }
+        Button btCancelar = (Button) findViewById(R.id.btCancelar);
+        btCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setResult(RESULT_CANCELED);
+                finish();
+            }
+        });
         Button btSalvar = (Button) findViewById(R.id.btSalvar);
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +49,26 @@ public class EditarCarro extends AppCompatActivity {
                 salvar();
             }
         });
+        Button btExcluir = (Button) findViewById(R.id.btExcluir);
+        if(id == null){
+            btExcluir.setVisibility(View.INVISIBLE);
+        }else{
+            btExcluir.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    excluir();
+                }
+            });
+        }
+
+    }
+
+    public void excluir(){
+        if(id != null){
+            excluirCarro(id);
+        }
+        setResult(RESULT_OK, new Intent());
+        finish();
     }
 
     public void salvar(){
@@ -54,7 +90,15 @@ public class EditarCarro extends AppCompatActivity {
         finish();
     }
 
-    private void salvarCarro(Carro carro) {
+    private Carro buscarCarro(Long id) {
+        return MainActivity.repositorio.buscarCarro(id);
+    }
+
+    public void salvarCarro(Carro carro) {
         MainActivity.repositorio.salvar(carro);
+    }
+
+    public void excluirCarro(long id){
+        MainActivity.repositorio.deletar(id);
     }
 }
